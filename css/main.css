@@ -47,6 +47,7 @@ body {
 }
 .box .text {
     color: white;
+    text-align: center;
     font-weight: 600;
     font-size: 20px;
     padding: 10px;
