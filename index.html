@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="./18cc05d0-d5a5-4bea-9998-709edd869795.ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>مواقيت الصلاة</title>
+  </head>
+  <body>
+    <div class="main-content  position-relative">
+      <div class="container d-flex flex-column position-relative">
+        <div class="head d-flex my-3 pt-3">
+            <div class="logo"><i class="fa-solid fa-mosque fa-beat-fade fs-1"></i></div>
+            <div class="text flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+                <div class="arabic fs-1 fw-bold">مواقيت الصلاة</div>
+            </div>
+        </div>
+        <!-- end head  -->
+        <div class="date d-flex my-5 justify-content-center fs-3 text-white-50"></div>
+        <!-- end date -->
+        <div class=" d-flex justify-content-center">
+          <select class="my-5 p-2" id="governorates">
+            <option value="Asyūţ">أسيوط</option>
+            <option value="Al Iskandarīyah">الإسكندرية</option>
+            <option value="Aswān"> أسوان</option>
+            <option value="Al Buḩayrah">البحيرة</option>
+            <option value="Banī Suwayf"> بني سويف</option>
+            <option value="Al Minyā">المنيا</option>
+            <option value="EG-SHG">سوهاج</option>
+            <option value="Qinā">قنا</option>
+            <option value="Al Qāhirah">القاهرة</option>
+            <option value="Al Gharbīyah">الغربية</option>
+            <option value="Al Uqşur">الأقصر</option>
+            <option value="Al Baḩr al Aḩmar">البحر الأحمر</option>
+            <option value="Būr Sa‘īd">بورسعيد</option>
+            <option value="Janūb Sīnā'">جنوب سيناء</option>
+            <option value="Ad Daqahlīyah">الدقهلية</option>
+            <option value="Al Jīzah">الجيزة</option>
+            <option value="Dumyāţ">دمياط</option>
+            <option value="As Suways">السويس</option>
+            <option value="Ash Sharqīyah">الشرقية</option>
+            <option value="Shamāl Sīnā'">شمال سيناء</option>
+            <option value="Al Fayyūm">الفيوم</option>
+            <option value="Al Qalyūbīyah">القليوبية</option>
+            <option value="Kafr ash Shaykh">كفر الشيخ</option>
+            <option value="Maţrūḩ">مطروح</option>
+            <option value="Al Minūfīyah">المنوفية</option>
+            <option value="Al Wādī al Jadīd">الوادي الجديد</option>
+            <option value="Al Ismā'īlīyah">الإسماعيلية</option>
+            
+          </select>
+        </div>
+        <div class="time mt-3 pt-5 d-flex justify-content-between flex-wrap">
+          <div class="box">
+            <div class="text">
+              <div>العِشاء</div>
+            </div>
+            <div class="Isha timming"></div>
+          </div>
+
+          <div class="box">
+            <div class="text">
+              <div>المَغرب</div>
+            </div>
+            <div class="Maghrib timming"></div>
+          </div>
+          
+          
+          <div class="box">
+            <div class="text">
+                <div>العَصر</div>
+              </div>
+              <div class="Asr timming"></div>
+            </div>
+
+            <div class="box">
+                <div class="text">
+                  <div>الظُّهْر</div>
+                </div>
+                <div class="Dhuhr timming"></div>
+              </div>
+            
+            <div class="box">
+              <div class="text">
+                  <div>الشروق</div>
+                </div>
+                <div class="sun-rise timming"></div>
+              </div>
+            
+            <div class="box">
+              <div class="text">
+                <div>الفجْر</div>
+              </div>
+              <div class="fajr timming"></div>
+            </div>
+            
+            
+          </div>
+          <!-- end time -->
+          
+          
+        </div>
+      <!-- end of content  -->
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
