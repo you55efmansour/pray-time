@@ -19,7 +19,7 @@ let day = (date.getDate())-1
 let year = date.getFullYear()
 
 async function getPrayTime(gvValue) {
-    let prayTime = await fetch(`http://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${gv.value}&country=egypt&method=5`)
+    let prayTime = await fetch(`https://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${gv.value}&country=egypt&method=5`)
     let myApi = await prayTime.json()
     let {data} = myApi
     dateDiv.innerHTML=data[day].date.readable
