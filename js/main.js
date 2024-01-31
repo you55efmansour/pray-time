@@ -7,11 +7,17 @@ let asr = document.querySelector(".Asr")
 let maghrib = document.querySelector(".Maghrib")
 let isha = document.querySelector(".Isha")
 let gv = document.querySelector("#governorates")
+localStorage.length === 0 ? "" : gv.value = window.localStorage.getItem("value")
 let gvValue = gv.value
 gv.addEventListener("change",()=>{
     gvValue = gv.value
     getPrayTime(gvValue)
+    sendToLocal(gvValue)
 })
+
+function sendToLocal(value) {
+    window.localStorage.setItem("value",value)
+}
 
 let date = new Date()
 let month = (date.getMonth())+1
@@ -19,7 +25,7 @@ let day = (date.getDate())-1
 let year = date.getFullYear()
 
 async function getPrayTime(gvValue) {
-    let prayTime = await fetch(`https://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${gv.value}&country=egypt&method=5`)
+    let prayTime = await fetch(`https://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${gvValue}&country=egypt&method=5`)
     let myApi = await prayTime.json()
     let {data} = myApi
     dateDiv.innerHTML=data[day].date.readable
